@@ -27,7 +27,6 @@ int main() {
     bind(linkFD, (struct sockaddr*)&servAddr, sizeof(servAddr));
     listen(linkFD, 10); // 可以同时监听10个端
 
-
     char buf[MAXLINE];
     char str[INET_ADDRSTRLEN];
     pid_t pid;
